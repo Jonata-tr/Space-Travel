@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space Tourism</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/header.js"></script>
+
   </head>
   <body>
     <div class="body-wrapper">
@@ -51,26 +53,5 @@
         <a href="" class="font-1-32">EXPLORE</a>
       </main>
     </div>
-
-    <script>
-      let counter = 0;
-      function activeMenu() {
-        const mobMenu = document.querySelector(".header-menu");
-        let hamburguer = document.querySelector(".mob-menu");
-
-        console.log(hamburguer);
-
-        if (counter == 0) {
-          hamburguer.src = "/assets/shared/icon-close.svg";
-          mobMenu.classList.toggle("show");
-          counter = 1;
-          return
-        } else {
-          hamburguer.src = "/assets/shared/icon-hamburger.svg";
-          mobMenu.classList.toggle("show");
-        }
-        counter = 0;
-      }
-    </script>
   </body>
 </html>

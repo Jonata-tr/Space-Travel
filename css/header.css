@@ -1,5 +1,5 @@
 header{
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
@@ -17,8 +17,8 @@ header::before{
   content: '';
   display: inline-block;
   position: absolute;
-  right: 800px;
-  width: calc(80% - 640px);
+  right: 720px;
+  width: calc(80% - 560px);
   height: 2px;
   background: #ffffff5c;
   z-index: 2;
@@ -30,7 +30,7 @@ header::before{
   display: flex;
   gap: 60px;
   right: -180px;
-  padding: 0 320px 0 80px;
+  padding: 0 240px 0 80px;
   background-color: hsla(0, 0%, 100%, 4%);
   backdrop-filter: blur(14px);
   transition: .5s;

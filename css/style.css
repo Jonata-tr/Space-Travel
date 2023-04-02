@@ -32,11 +32,11 @@ a{
 }
 
 main{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  bottom: -160px;
+  bottom: -300px;
   display: flex;
   justify-content: space-between;
 }
