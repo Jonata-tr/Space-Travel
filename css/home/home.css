@@ -1,0 +1,108 @@
+.body-home{
+  background: url('/assets/home/background-home-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.home{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  bottom: -300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro p{
+  max-width: 48ch;
+}
+
+.home a{
+  width: 274px;
+  height: 274px;
+  display: grid;
+  place-content: center;
+  background-color: #Fff;
+  border-radius: 50%;
+  position: relative;
+  right: 0;
+  transition: box-shadow .5s;
+}
+
+.home a:hover{
+  box-shadow: 0 0 0 60px hsla(0, 0%, 100%, .20);
+}
+
+@media(max-width:800px){
+
+  body{
+    background: url('/assets/home/background-home-tablet.jpg');
+  }
+
+  main{
+    flex-direction: column;
+    align-items: center;
+    position: initial;
+  }
+
+  .home{
+    margin-top: 60px;
+    bottom: 0;
+  }
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .intro span{
+    font-size: 1.25rem;
+  }
+
+  .intro p{
+    font-size: 1rem;
+  }
+
+  .home a{
+    transition: .2s;
+  }
+}
+
+@media(max-width:545px){
+  body{
+    background: url('/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .intro {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .into span{
+    font-size: 1rem;
+  }
+
+  .intro h1{
+    font-size: 5rem;
+   }
+
+   .intro p{
+    font-size: .9rem;
+    line-height: 1.67;
+   }
+
+   .home a{
+    width: 150px;
+    height: 150px;
+    font-size: 1.25rem;
+   }
+}

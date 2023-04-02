@@ -1,0 +1,7 @@
+.body-crew{
+  background: url('/assets/crew/background-crew-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+}

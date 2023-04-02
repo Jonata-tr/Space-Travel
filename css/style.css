@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+/* Utilitarios */
 @import url('./utilidades/componentes.css');
 @import url('./header.css');
+/* HOME */
+@import url('/css/home/home.css');
+/* Destination */
+@import url("/css/destination/destination.css");
+/* Crew */
+@import url('/css/crew/crew.css');
+/* Technology */
+@import url('/css/technology/technology.css');
 
 *,
 *::after,
@@ -11,18 +19,8 @@
   box-sizing: border-box;
 }
 
-
-body{
-  background: url('/assets/home/background-home-desktop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+html{
   overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-.body-wrapper{
-  position: relative;
 }
 
 a{
@@ -31,94 +29,10 @@ a{
   display: inline-block;
 }
 
-main{
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  bottom: -300px;
-  display: flex;
-  justify-content: space-between;
+img{
+  max-width: 100%;
 }
 
-.intro p{
-  max-width: 48ch;
-}
-
-.home a{
-  width: 274px;
-  height: 274px;
-  display: grid;
-  place-content: center;
-  background-color: #Fff;
-  border-radius: 50%;
-  position: relative;
-  right: 0;
-  transition: box-shadow .5s;
-}
-
-.home a:hover{
-  box-shadow: 0 0 0 60px hsla(0, 0%, 100%, .20);
-}
-
-@media(max-width:800px){
-
-  body{
-    background: url('/assets/home/background-home-tablet.jpg');
-  }
-
-  main{
-    flex-direction: column;
-    align-items: center;
-    position: initial;
-  }
-
-  .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    text-align: center;
-    margin-bottom: 156px;
-  }
-
-  .intro span{
-    font-size: 1.25rem;
-  }
-
-  .intro p{
-    font-size: 1rem;
-  }
-}
-
-@media(max-width:545px){
-  body{
-    background: url('/assets/home/background-home-mobile.jpg');
-    background-size: cover;
-    overflow-x: hidden;
-  }
-
-  .intro {
-    margin-top: 0;
-    margin-bottom: 80px;
-  }
-
-  .into span{
-    font-size: 1rem;
-  }
-
-  .intro h1{
-    font-size: 5rem;
-   }
-
-   .intro p{
-    font-size: .9rem;
-    line-height: 1.67;
-   }
-
-   .home a{
-    width: 150px;
-    height: 150px;
-    font-size: 1.25rem;
-   }
+ul{
+  list-style: none;
 }

@@ -1,0 +1,7 @@
+.body-technology{
+  background: url('/assets/technology/background-technology-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+}

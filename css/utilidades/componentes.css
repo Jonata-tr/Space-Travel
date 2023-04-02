@@ -33,13 +33,16 @@ font-family: 'Bellefair', serif; */
 .font-1-32{
   font: 400 2rem 'Bellefair', serif;;
 }
-.font-2-28-spacing{
+
+.font-1-28{
+  font: 400 1.75rem 'Bellefair', sans-serif;
+}
+
+.font-2-28{
   font: 400 1.75rem 'Barlow Condensed', sans-serif;
   letter-spacing: 4.75px;
 }
-.font-2-28{
-  font: 400 1.75rem 'Barlow Condensed', sans-serif;
-}
+
 .font-2-14{
   font: 400 .9rem 'Barlow Condensed', sans-serif;
   letter-spacing: 2.35px;
@@ -52,6 +55,10 @@ font-family: 'Bellefair', serif; */
   font: 400 1.75rem 'Barlow Condensed', sans-serif;
 }
 
+.p-18{
+  font: 400 1.13rem 'Barlow', sans-serif;
+  line-height: 1.75;
+}
 /* Margins */
 
 .mg-24{

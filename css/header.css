@@ -57,16 +57,16 @@ li{
   width: 0;
   height: 4px;
   bottom: 0px;
-  background: #fff;
+  background-color: #ffffff73;
   transition: .2s;
 }
 
 .header-menu li.active::after{
+  background: #fff;
   width: 100%;
 }
 
 li:not(.active):hover::after{
-  background-color: #ffffff73;
   width: 100%;
 }
 
@@ -81,7 +81,8 @@ li:not(.active):hover::after{
   }
 
   header::before{
-    right: 700px;
+    width: calc(80% - 600px);
+    right: 690px;
   }
 }
 
@@ -102,7 +103,7 @@ li:not(.active):hover::after{
   }
 
   .header-menu{
-    padding: 0 100px 0 40px;
+    padding: 0 60px 0 40px;
     gap: 32px;
   }
 
@@ -145,7 +146,7 @@ li:not(.active):hover::after{
     right: -320px;
     gap: 0;
     flex-direction: column;
-    padding: 110px 120px 0 0px;
+    padding: 110px 110px 0 0px;
     transition: .1s;
     z-index: 1;
   }
@@ -160,7 +161,7 @@ li:not(.active):hover::after{
   }
 
   .header-menu li.active::after{
-    right: -120px;
+    right: -110px;
     top: 32px;
     width: 4px;
     height: 32px;
