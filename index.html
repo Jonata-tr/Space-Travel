@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header>
+        <img src="/assets/shared/logo.svg" alt="" />
+        <nav>
+          <img
+            src="/assets/shared/icon-hamburger.svg"
+            alt=""
+            class="mob-menu"
+            onclick="activeMenu()"
+          />
+          <ul class="header-menu">
+            <li class="font-2-16 cor-p3 active">
+              <a href=""><span>00</span>HOME</a>
+            </li>
+            <li class="font-2-16 cor-p3">
+              <a href=""><span>01</span>DESTINATION</a>
+            </li>
+            <li class="font-2-16 cor-p3">
+              <a href=""><span>02</span>CREW</a>
+            </li>
+            <li class="font-2-16 cor-p3">
+              <a href=""><span>03</span>TECHNOLOGY</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="home">
+        <div class="intro">
+          <span class="font-2-28-spacing cor-p2">
+            SO, YOU WANT TO TRAVEL TO
+          </span>
+          <h1 class="font-1-150 cor-p3">SPACE</h1>
+          <p class="font-2-18 cor-p2">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <a href="" class="font-1-32">EXPLORE</a>
+      </main>
+    </div>
+
+    <script>
+      let counter = 0;
+      function activeMenu() {
+        const mobMenu = document.querySelector(".header-menu");
+        let hamburguer = document.querySelector(".mob-menu");
+
+        console.log(hamburguer);
+
+        if (counter == 0) {
+          hamburguer.src = "/assets/shared/icon-close.svg";
+          mobMenu.classList.toggle("show");
+          counter = 1;
+          return
+        } else {
+          hamburguer.src = "/assets/shared/icon-hamburger.svg";
+          mobMenu.classList.toggle("show");
+        }
+        counter = 0;
+      }
+    </script>
+  </body>
+</html>

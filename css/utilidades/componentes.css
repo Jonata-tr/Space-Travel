@@ -1,0 +1,59 @@
+/* COLORS */
+
+:root{
+  --cor-p1: #0B0D17;
+  --cor-p2: #D0D6F9;
+  --cor-p3: #FFFFFF;
+}
+
+.cor-p1{
+  color: var(--cor-p1);
+} 
+.cor-p2{
+  color: var(--cor-p2);
+}
+.cor-p3{
+  color: var(--cor-p3);
+}
+
+/* TYPOGRAPHY */
+/* 
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+
+.font-1-150{
+  font: 400 9.38rem 'Bellefair', serif;;
+}
+.font-1-100{
+  font: 400 6.25rem 'Bellefair', serif;;
+}
+.font-1-56{
+  font: 400 3.5rem 'Bellefair', serif;;
+}
+.font-1-32{
+  font: 400 2rem 'Bellefair', serif;;
+}
+.font-2-28-spacing{
+  font: 400 1.75rem 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.75px;
+}
+.font-2-28{
+  font: 400 1.75rem 'Barlow Condensed', sans-serif;
+}
+.font-2-14{
+  font: 400 .9rem 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.35px;
+}
+.font-2-16{
+  font: 400 1rem 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+.font-2-28{
+  font: 400 1.75rem 'Barlow Condensed', sans-serif;
+}
+
+/* Margins */
+
+.mg-24{
+  margin-bottom: 24px;
+}

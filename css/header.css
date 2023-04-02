@@ -1,0 +1,172 @@
+header{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+header img{
+  width: 48px;
+  height: 48px;
+}
+
+header::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 800px;
+  width: calc(80% - 640px);
+  height: 2px;
+  background: #ffffff5c;
+  z-index: 2;
+}
+
+.header-menu{
+  list-style: none;
+  position: relative;
+  display: flex;
+  gap: 60px;
+  right: -180px;
+  padding: 0 320px 0 80px;
+  background-color: hsla(0, 0%, 100%, 4%);
+  backdrop-filter: blur(14px);
+  transition: .5s;
+}
+
+.header-menu a{
+  display: flex;
+  gap: 12px;
+  padding: 32px 0;
+}
+
+li{
+  position: relative;
+}
+
+.header-menu a > span{
+  font-weight: bold;
+}
+
+.header-menu li::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 4px;
+  bottom: 0px;
+  background: #fff;
+  transition: .2s;
+}
+
+.header-menu li.active::after{
+  width: 100%;
+}
+
+li:not(.active):hover::after{
+  background-color: #ffffff73;
+  width: 100%;
+}
+
+.mob-menu{
+  display: none;
+}
+
+@media(max-width:1440px){
+  .header-menu{
+    padding: 0 90px 0 60px;
+    right: -20px;
+  }
+
+  header::before{
+    right: 700px;
+  }
+}
+
+@media(max-width:950px){
+  header::before{
+    display: none;
+  }
+}
+
+@media(max-width:800px){
+  header{
+    margin-bottom: 20px;
+  }
+
+  header img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-menu{
+    padding: 0 100px 0 40px;
+    gap: 32px;
+  }
+
+  .header-menu span{
+    display: none;
+  }
+
+  .header-menu a{
+    padding: 32px 0;
+    font-size: 14px;
+  }
+}
+
+@media(max-width:545px){
+  .body-wrapper{
+    height: 100%;
+    overflow: hidden;
+  }
+
+  header{
+    margin-bottom: 38px;
+  }
+
+  nav{
+    justify-self: end;
+  }
+
+  .mob-menu{
+    position: relative;
+    display: inline;
+    width: 24px;
+    height: 21px;
+    z-index: 2;
+  }
+
+  .header-menu{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -320px;
+    gap: 0;
+    flex-direction: column;
+    padding: 110px 120px 0 0px;
+    transition: .1s;
+    z-index: 1;
+  }
+
+  .header-menu span{
+    display: inline-block;
+  }
+
+  .header-menu a{
+    font-size: 1rem;
+    padding: 32px;
+  }
+
+  .header-menu li.active::after{
+    right: -120px;
+    top: 32px;
+    width: 4px;
+    height: 32px;
+  }
+}
+
+.show{
+  right: 0;
+}
