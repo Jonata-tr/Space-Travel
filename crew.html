@@ -7,7 +7,7 @@
     <title>Space Tourism</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="/js/header.js"></script>
-    <script src="/js/teste.js"></script>
+    <script src="/js/crew.js"></script>
 
   </head>
   <body class="body-crew">
@@ -44,30 +44,30 @@
 
       <div class="informacoes-crew">
         <div class="conteudo-crew">
-          <span class="font-1-32">
+          <span class="font-1-32 cargo">
             COMMANDER
           </span>
-          <h2 class="font-1-56 cor-p3">
+          <h2 class="font-1-56 cor-p3 nome">
             Douglas Hurley
           </h2>
 
-          <p class="p-18 cor-p2">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+          <p class="p-18 cor-p2 sobre">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
         
           <div class="crew-radios">
             <label>
-              <input type="radio" name="membro" value="0" checked>
+              <input type="radio" name="membro" onchange="crew()" checked >
               <span class="checkmark"></span>
             </label>
             <label>
-              <input type="radio" name="membro" value="1">
+              <input type="radio" name="membro" onchange="crew()">
               <span class="checkmark"></span>
             </label>
             <label>
-              <input type="radio" name="membro" value="2">
+              <input type="radio" name="membro" onchange="crew()">
               <span class="checkmark"></span>
             </label>
             <label>
-              <input type="radio" name="membro" value="3">
+              <input type="radio" name="membro" onchange="crew()">
               <span class="checkmark"></span>
             </label>
            
@@ -75,7 +75,7 @@
         </div>
 
         <div class="crew-img">
-          <img src="/assets/crew/image-douglas-hurley.png" alt="">
+          <img src="/assets/crew/image-douglas-hurley.png" alt="" class="img">
         </div>
       </div>
     </main>
