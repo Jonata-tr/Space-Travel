@@ -124,7 +124,7 @@ li:not(.active):hover::after{
   }
 
   header{
-    margin-bottom: 38px;
+    margin-bottom: 10px;
   }
 
   nav{
@@ -132,6 +132,7 @@ li:not(.active):hover::after{
   }
 
   .mob-menu{
+    cursor: pointer;
     position: relative;
     display: inline;
     width: 24px;

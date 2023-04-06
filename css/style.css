@@ -29,10 +29,13 @@ a{
   display: inline-block;
 }
 
-img{
-  max-width: 100%;
-}
-
 ul{
   list-style: none;
+}
+
+
+.heading{
+  max-width: 1500px;
+  padding: 20px 0;
+  margin: 16px auto;
 }

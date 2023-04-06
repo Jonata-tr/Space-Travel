@@ -2,6 +2,85 @@
   background: url('/assets/crew/background-crew-desktop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
+}
+
+.informacoes-crew{
+  max-width: 1200px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.conteudo-crew{
+  align-self: self-end;
+  padding-bottom: 120px;
+}
+
+.conteudo-crew span{
+  color: #ffffff6b;
+  margin-bottom: 16px;
+}
+
+.conteudo-crew h2{
+  margin-bottom: 28px;
+}
+
+.conteudo-crew p{
+  max-width: 45ch;
+  margin-bottom: 125px;
+}
+
+.crew-radios{
+  display: flex;
+  gap: 24px;
+}
+
+.crew-img{
+  position: relative;
+  bottom: -8px;
+}
+
+.crwew-img img{
+  max-width: none;
+  width: 600px;
+}
+
+.crew-radios{
+  display: flex;
+  gap: 36px;
+}
+
+.crew-radios label{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;  
+}
+
+.crew-radios input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark{
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff31;
+}
+
+.crew-radios input:checked ~ .checkmark{
+  background: #fff;
+}
+
+h4{
+  background: brown;
+  display: inline-block;
+  padding: 30px;
+  margin-top: 30px;
 }
