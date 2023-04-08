@@ -162,6 +162,7 @@
   .body-destination{
     background: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
+    overflow-y: initial;
   }
 
   .destination h1{

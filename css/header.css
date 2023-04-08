@@ -24,6 +24,10 @@ header::before{
   z-index: 2;
 }
 
+.logo{
+  max-width: fit-content;
+}
+
 .header-menu{
   list-style: none;
   position: relative;
