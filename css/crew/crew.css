@@ -6,53 +6,51 @@
   height: 100vh;
 }
 
+.main-crew{
+  padding: 0 20px;
+}
+
 .informacoes-crew{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 500px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .conteudo-crew{
+  align-self: end;
   position: relative;
-  align-self: self-end;
-  padding-bottom: 120px;
+}
+
+.crew-img{
+  position: relative;
+}
+.crew-img img{
+  position: absolute;
+  bottom: -210px;
 }
 
 .conteudo-crew span{
+  text-transform: uppercase;
   color: #ffffff6b;
   margin-bottom: 16px;
 }
 
 .conteudo-crew h2{
+  text-transform: uppercase;
   margin-bottom: 28px;
 }
 
 .conteudo-crew p{
+  margin-bottom: 60px;
   max-width: 45ch;
-  margin-bottom: 125px;
-}
-
-.crew-radios{
-  display: flex;
-  gap: 24px;
-}
-
-
-.crew-img .img{
-  display: inline-block;
-  position: relative;
-  bottom: -80px;
-}
-
-.crwew-img img{
-  max-width: none;
-  width: 600px;
 }
 
 .crew-radios{
   display: flex;
   gap: 36px;
+  height: 40px;
 }
 
 .crew-radios label{
@@ -73,17 +71,140 @@
   left: 0;
   width: 16px;
   height: 16px;
+  border: 1px solid;
   border-radius: 50%;
-  background: #ffffff31;
+  background: #ffffff33;
 }
 
 .crew-radios input:checked ~ .checkmark{
   background: #fff;
 }
 
-h4{
-  background: brown;
-  display: inline-block;
-  padding: 30px;
-  margin-top: 30px;
+.crew-radios input:hover:not(:checked) ~ .checkmark{
+  background: #ffffff7e;
+}
+@media(max-width: 1200px){
+  .informacoes-crew{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media(max-width: 800px){
+  .body-crew{
+    background: url('/assets/crew/background-crew-tablet.jpg');
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  
+  .main-crew h1{
+    margin: 0;
+    padding: 0 0 60px 0;
+    font-size: 1.25rem;
+  }
+  
+  .informacoes-crew{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-content: center;
+  }
+
+  .conteudo-crew{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    place-self: start;
+    padding-bottom: 0;
+  }
+
+  .conteudo-crew span{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .conteudo-crew h2{
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .conteudo-crew p{
+    margin-bottom: 32px;
+    font-size: 1rem;
+    max-width:65ch;
+  }
+
+  .checkmark{
+    width: 16px;
+    height: 16px;
+  }
+
+  .crew-img{
+    justify-self: center;
+  }
+
+  .crew-img img{
+    position: relative;
+    bottom: -10px;
+    max-width: 500px;
+  }
+}
+
+@media(max-width:545px){
+  .body-crew{
+    background: url('/assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+  }
+
+  .main-crew h1{
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 32px;
+  }
+
+  .informacoes-crew{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .conteudo-crew{
+    place-self: center;
+  }
+
+  .conteudo-crew span{
+    font-size: 1rem;
+  }
+
+  .conteudo-crew h2{
+    font-size: 1.5rem;
+  }
+
+  .conteudo-crew p{
+    font-size: .9rem;
+    max-width: 38ch;
+  }
+
+  .crew-radios{
+    grid-row: 1;
+    gap: 30px;
+    margin-bottom: 32px;
+  }
+
+  .checkmark{
+    width: 12px;
+    height: 12px;
+  }
+
+  .crew-img{
+    grid-row: 1;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-p2);
+  }
+
+  .crew-img img{
+    max-width: 230px;
+    max-height: 223px;
+    bottom: -2px;
+  }
 }
