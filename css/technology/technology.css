@@ -5,3 +5,173 @@
   overflow-x: hidden;
   height: 100vh;
 }
+
+.main-tec{
+  padding: 0 20px;
+}
+
+.tec-informacoes{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 480px 1fr;
+  align-items: start;
+}
+
+.tec-conteudo span{
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.tec-conteudo h2{
+  margin-bottom: 16px;
+}
+.tec-conteudo p{
+  max-width: 43.6ch;
+}
+
+.tec-radios,
+.tec-conteudo{
+  place-self: center;
+}
+
+.tec-img{
+  position: relative;
+  right: -10%;
+  justify-self: end;
+}
+
+
+
+
+
+
+/* RADIO BUTTONS */
+.tec-radios{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  margin-right: 80px;
+}
+.tec-radios label{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;  
+}
+.tec-radios input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.option{
+  position: relative;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff98;
+  display: grid;
+  place-content: center;
+}
+.tec-radios input:checked ~ .option{
+  background: #fff;
+  color: var(--cor-p1);
+}
+.tec-radios input:hover:not(:checked) ~ .option{
+  color: #fff;
+}
+
+@media(max-width:800px){
+  .main-tec{
+    padding: 0;
+  }
+
+  .main-tec h1{
+    padding: 40px 0 60px 20px;
+  }
+
+  .tec-informacoes{
+    justify-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .tec-radios{
+    margin-right: 0;
+    margin-bottom: 32px;
+    flex-direction: row;
+  }
+  .option{
+    width: 60px;
+    height: 60px;
+  }
+  .tec-informacoes span{
+    margin-bottom: 16px;
+  }
+  .tec-informacoes h2{
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  .tec-informacoes p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .tec-img{
+    grid-area: 1;
+    justify-self: center;
+    position: initial;
+    margin-bottom: 56px;
+  }
+
+  .tec-img picture{
+    max-width: 100%;
+  }
+}
+
+@media(max-width:545px){
+
+  .body-technology{
+    overflow-y: auto;
+  }
+
+  .main-tec h1{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 20px 32px;
+  }
+  
+  .tec-informacoes{
+    justify-content: center;
+  }
+
+  .tec-img{
+    margin-bottom: 32px;
+  }
+  
+  .tec-radios{
+    margin-bottom: 26px;
+  }
+  .option{
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tec-informacoes span{
+    font-size: .8rem;
+  }
+  .tec-informacoes h2{
+    font-size: 1.5rem;
+  }
+  .tec-informacoes p{
+    font-size: .95rem;
+    max-width: 32ch;
+  }
+
+  .tec-img picture{
+    object-fit: fill;
+  }
+}

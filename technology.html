@@ -4,26 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space Tourism</title>
+    <title>Space - Launch 101</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="/js/header.js"></script>
-
   </head>
   <body class="body-technology">
     <header>
-      <a href="/index.html" class="logo">
-        <img
-          src="/assets/shared/logo.svg"
-          alt=""
-        />
-       </a>
+      <a href="/index.html">
+        <img src="/assets/shared/logo.svg" alt="" />
+      </a>
       <nav>
-        <a href="/index.html">
-          <img
-            src="/assets/shared/logo.svg"
-            alt=""
-          />
-         </a>
+        <img
+          src="/assets/shared/icon-hamburger.svg"
+          alt=""
+          class="mob-menu"
+          onclick="activeMenu()"
+        />
         <ul class="header-menu">
           <li class="font-2-16 cor-p3">
             <a href="/index.html"><span>00</span>HOME</a>
@@ -41,6 +36,49 @@
       </nav>
     </header>
 
-    
+    <main class="main-tec">
+      <h1 class="font-2-28 cor-p3 heading">
+        <span class="cor-p2">03</span> SPACE LAUNCH 101
+      </h1>
+      <div class="tec-informacoes">
+        <div class="tec-radios font-1-32">
+          <label>
+            <input type="radio" name="tec" onchange="tec()" checked />
+            <span class="option">1</span>
+          </label>
+          <label>
+            <input type="radio" name="tec" onchange="tec()" />
+            <span class="option">2</span>
+          </label>
+          <label>
+            <input type="radio" name="tec" onchange="tec()" />
+            <span class="option">3</span>
+          </label>
+        </div>
+
+        <div class="tec-conteudo">
+          <span class="font-2-16 cor-p2">THE TERMINOLOGY…</span>
+          <h2 class="font-1-56 cor-p3 tec-name">LAUNCH VEHICLE</h2>
+          <p class="p-18 cor-p2 tec-text">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </div>
+
+        <div class="tec-img">
+          <picture>
+            <source media="(min-width:801px)" srcset="/assets/technology/image-launch-vehicle-portrait.jpg">
+            <source media="(max-width:800px)" srcset="/assets/technology/image-launch-vehicle-landscape.jpg">
+            <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/tec.js"></script>
   </body>
 </html>

@@ -11,13 +11,7 @@
 }
 
 .destination h1{
-  max-width: 1400px;
-  padding: 20px 0 20px 40px;
-  margin: 52px auto 62px
-}
-
-.page-number{
-  color: #ffffff78;
+  margin: 0 auto 62px
 }
 
 .destination-img{
@@ -115,7 +109,7 @@
   }
 
   .destination h1{
-    padding: 0 0 20px;
+    padding: 0 20px;
     margin: 0 0 60px;
     font-size: 1.25rem;
   }
