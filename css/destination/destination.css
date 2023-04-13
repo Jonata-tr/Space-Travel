@@ -21,7 +21,7 @@
 .informations{
   max-width: 1300px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -148,7 +148,7 @@
   }
 
   .infos{
-    padding-bottom: 32px;
+    padding-bottom: 12px;
   }
 }
 
