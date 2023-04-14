@@ -1,19 +1,3 @@
-<style>
-  img{
-    width: 300px;
-  }
-
-  .sub{
-    font-size: 1.2rem;
-    margin-top: 20px;
-  }
-
-  .mob img{
-    height: 500px; 
-  }
-</style>
-
-
 # Frontend Mentor - Space tourism website solution
 
 Isso é uma solução para o [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Os desafios do Front-End Mentor ajudam a desenvolvedores a melhorar suas habilidades com projetos realistas e estruturados.
@@ -40,6 +24,28 @@ Usuarios devem poder:
 - Ver cada pagina e poder alternar entre elas
 
 ### Screenshot
+
+<style>
+  .desktop img{
+    width: 500px;
+  }
+
+  .desktop{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .sub{
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .mob img{
+    height: 500px; 
+  }
+</style>
 
 <h1 class='sub'>Versão Para Desktop</h1>
 <div  class='desktop'>
